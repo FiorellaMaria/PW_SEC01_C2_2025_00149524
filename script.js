@@ -1,7 +1,7 @@
 function cambiarTitulo() {
   const titulos = [
     "HTML & CSS: Curso practico avanzado",
-    "Examen Práctico 1 - Programación Web",
+    "Autor del libro: Sergio Luján Mora",
     "Bienvenido a la página del libro"
   ];
   const boton = document.getElementById('cambio-titulo');
@@ -36,3 +36,22 @@ function ordenarParrafos() {
 }
 
 document.getElementById('cambio-orden-parrafos').onclick = ordenarParrafos;
+
+function agregarImagen() {
+  const aside = document.querySelector('aside');
+  // Evita agregar la imagen más de una vez
+  if (document.getElementById('portada-libro')) return;
+
+  const img = document.createElement('img');
+  img.id = 'portada-libro';
+  img.src = './imagen/portada.jpg';
+  img.style.display = 'block';
+  img.style.margin = '20px auto';
+  img.style.width = '180px';
+  img.style.height = 'auto';
+  img.style.borderRadius = '8px';
+
+  aside.appendChild(img);
+}
+
+document.getElementById('agregar-imagen').onclick = agregarImagen;
