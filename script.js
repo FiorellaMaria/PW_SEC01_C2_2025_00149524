@@ -35,4 +35,4 @@ function ordenarParrafos() {
   textoLibro.style.gap = '1em';
 }
 
-document.getElementById('cambio-orden-parafos').onclick = ordenarParrafos;
+document.getElementById('cambio-orden-parrafos').onclick = ordenarParrafos;
