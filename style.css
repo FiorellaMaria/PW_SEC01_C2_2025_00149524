@@ -1,4 +1,20 @@
 content {
     display: flex;
     flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: center;
+}
+
+#texto_libro {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    width: 90%;
 }
