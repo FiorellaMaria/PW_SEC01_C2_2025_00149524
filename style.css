@@ -18,3 +18,7 @@ h1 {
 section {
     width: 90%;
 }
+
+#descripcion-libro {
+    text-align: justify;
+}
